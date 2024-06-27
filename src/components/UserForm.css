@@ -1,0 +1,267 @@
+/* UserForm.css */
+body {
+    margin: 0;
+  }
+  
+  .page-content {
+    width: 100%;
+    margin: 0 auto;
+    background: #e975c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(136deg, rgb(220, 157, 202) 0%, rgb(236, 139, 218) 100%);
+  }
+  
+  .form-v10-content {
+    background: #fff;
+    width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    margin: 95px 0;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .form-detail {
+    display: flex;
+    width: 100%;
+  }
+  
+  .form-detail h2 {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 34px;
+    padding: 33px 50px 0 60px;
+  }
+  
+  .form-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+  }
+  
+  .form-left h2 {
+    color: #e975c4;
+  }
+  
+  .form-right {
+    width: 100%;
+    background: #e975c4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .form-right h2 {
+    color: #fff;
+  }
+  
+  .form-group {
+    display: flex;
+  }
+  
+  .form-row {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 60px;
+    padding-right: 50px;
+  }
+  
+  .form-row-1, .form-row-2, .form-row-3, .form-row-4 {
+    padding: 0 50px 0 60px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 11.5px 15px 15px;
+    border: 1px solid transparent;
+    background: none;
+    appearance: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    cursor: pointer;
+  }
+  
+  .select-btn {
+    position: absolute;
+    top: 30%;
+    right: 11.5%;
+    font-size: 18px;
+  }
+  
+  .form-left .select-btn {
+    color: #666;
+  }
+  
+  .form-right .select-btn {
+    color: #f2f2f2;
+  }
+  
+  input {
+    color: #000;
+  }
+  
+  .form-right input {
+    color: #fff;
+  }
+  
+  .form-left input, .form-left select {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .form-left input:focus, .form-left select:focus {
+    border-bottom: 1px solid #999;
+  }
+  
+  .form-right input, .form-right select {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .form-right input:focus, .form-right select:focus {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .form-right select option {
+    color: #fff;
+    background-color: #e975c4;
+  }
+  
+  .form-right select option:hover {
+    color: #000;
+  }
+  
+  textarea {
+    resize: none;
+    border: 1px solid transparent;
+    background: none;
+    outline: none;
+    width: 100%;
+    padding: 12px 15px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .form-left textarea {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .form-left textarea:focus {
+    border-bottom: 1px solid #999;
+  }
+  
+  .form-right textarea {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .form-right textarea:focus {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .form-row-last {
+    text-align: right;
+    padding: 14px 50px 14px 0;
+  }
+  
+  .register {
+    background: #e975c4;
+    border-radius: 5px;
+    padding: 15px 39px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .register:hover {
+    background: #e657c1;
+  }
+  
+  .input-text:focus, .company:focus, .business:focus, .street:focus, .additional:focus, .zip:focus, .code:focus, .phone:focus {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .form-checkbox {
+    padding-left: 60px;
+    padding-right: 50px;
+    margin-bottom: 27px;
+  }
+  
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+    user-select: none;
+  }
+  
+  .container p {
+    color: #666;
+    font-size: 13px;
+    display: inline;
+  }
+  
+  .container p a {
+    color: #666;
+  }
+  
+  .form-right .container p {
+    color: #fff;
+  }
+  
+  .form-right .container p a {
+    color: #fff;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #999;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #e975c4;
+  }
+  
+  .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 5px;
+    bottom: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+  }
+  
